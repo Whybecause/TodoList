@@ -1,0 +1,202 @@
+html, body {
+    margin: auto;
+    padding: 0;
+    width: 100vw;
+    overflow-x: hidden;
+    min-height: 100vh!important;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+  }
+
+html {
+    text-rendering: optimizeLegibility;
+}
+
+/* NAV ----------------------------- */
+
+nav {
+    background-color: #333;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+nav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+nav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav-right {
+  float: right;
+}
+.topnav-left {
+  float: left;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+/* ----------------- */
+
+input {
+    font-size: 16px;
+    font-size: max(16px, 1em);
+    font-family: inherit;
+    padding: 0.25em 0.5em;
+    background: rgb(248, 248, 248);
+    border: 1px solid rgb(185, 185, 185);
+    border-radius: 8px;
+}
+
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 7px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+button:hover {
+  background: rgb(41, 136, 41);
+}
+
+ul {
+  margin-top: 30px;
+  padding: 0;
+}
+
+/* Style the list items */
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+  background: #ddd;
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+  background: rgb(14, 99, 14);
+  color: #fff;
+  text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+li {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+/* Style the close button */
+.deleteButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  /* position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px; */
+}
+
+.deleteButton:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+.addTodoForm {
+  display: flex;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.center {
+  text-align: center;
+}
+
+.small-container {
+  background: red;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 10px;
+  background: rgb(241, 241, 241);
+}
+
+.auth-form {
+  padding: 10px 10px 10px 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-form input {
+  margin-bottom: 10px;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.font-small {
+  font-size: 15px;
+  color: grey;
+}
